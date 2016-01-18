@@ -1,0 +1,15 @@
+<template name="visa">
+  <h1>Edit Visa</h1> 
+ 
+   {{#autoForm collection="Visas" id="updateVisaForm" type="update" doc=this}}
+    <fieldset>
+      {{> afQuickField name='firstName'}}
+      {{> afQuickField name='lastName'}}
+      {{> afQuickField name='travelPurpose'}}
+      {{> afQuickField name='sex'}}
+      {{> afQuickField name='dateOfBirth'}}
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+  {{/autoForm}}  <a class="btn" href="/">Back</a>
+</template>

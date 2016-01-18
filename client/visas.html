@@ -1,0 +1,21 @@
+<template name="visas">
+  <h1>Add Visa Application</h1>
+ 
+   {{#autoForm collection="Visas" id="insertVisaForm" type="insert"}}
+    <fieldset>
+      {{> afQuickField name='firstName'}}
+      {{> afQuickField name='lastName'}}
+      {{> afQuickField name='travelPurpose'}}
+      {{> afQuickField name='sex'}}
+      {{> afQuickField name='dateOfBirth'}}
+    </fieldset>
+    
+    <button type="submit" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
+
+  <ul>
+    {{#each visas}} 
+      <li><a href="{{pathFor 'visa.show'}}">{{firstName}}</a> - {{lastName}}</li>
+    {{/each}}
+  </ul>
+</template>
