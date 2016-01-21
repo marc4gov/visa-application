@@ -17,7 +17,6 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
-mizzao:bootstrap-3
 msavin:mongol
 aldeed:autoform
 aldeed:collection2
@@ -30,3 +29,6 @@ cfs:autoform
 cfs:gridfs
 cfs:filesystem
 mrt:collection-api
+houston:admin
+mizzao:bootstrap-3
+react
