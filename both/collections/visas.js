@@ -36,6 +36,19 @@ Visas.attachSchema(new SimpleSchema({
   	type: Date,
     label: "Date of Birth"
   },
+  status : {
+    type: String,
+    label: "Status",
+    allowedValues: ['O', 'R', 'D', 'C'],
+    autoform: {
+      options: [
+        {label: "Open", value: "O"},
+        {label: "In Review", value: "R"}, 
+        {label: "Decision made", value: "D"},
+        {label: "Collect Application", value: "C"}
+      ]
+    }
+  },
   photo : {
     type: String,
     optional: true
